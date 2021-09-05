@@ -1,0 +1,32 @@
+.payment__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	font-weight: 400;
+	border-bottom: 1px solid lightgray;
+	background-color: rgba(221, 221, 221, 0.5);
+}
+
+.payment__header > .headline {
+	display: flex;
+	justify-self: center;
+	font-weight: 400;
+	padding-top: 10px;
+}
+
+.payment__header > h1 a {
+	text-decoration: none;
+	color: #007185;
+}
+
+.payment__header > .header__logo {
+	width: 100px;
+	position: absolute;
+	object-fit: contain;
+	margin: 0px;
+}
+
+.secure {
+	padding: 20px 40px 15px 40px;
+}
