@@ -77,3 +77,11 @@
 ### Selector - for cart count functionality
 
 - `export const getCartTotal = (cart) => cart?.reduce((amount, item) => item.price + amount, 0);`
+
+## For payment
+
+- Set up stripe
+- Set up axios
+- firebase init Cloud Functions
+- set up index.js > functions folder
+- add backend api endpoint to axios file

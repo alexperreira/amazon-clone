@@ -2,10 +2,14 @@ body {
 	background-color: white;
 }
 
+a {
+	text-decoration: none;
+	color: teal;
+}
+
 .payment {
 	display: flex;
 	justify-content: center;
-	text-align: center;
 	height: max-content;
 	min-height: 1100px;
 }
@@ -29,10 +33,6 @@ body {
 	border-bottom: 1px solid lightgray;
 }
 
-.payment__container > h1 a {
-	text-decoration: none;
-}
-
 .payment__section {
 	display: flex;
 	padding: 20px;
@@ -42,10 +42,68 @@ body {
 
 .payment__title {
 	flex: 0.2;
+	margin: 10px;
+}
+
+.payment__address,
+.payment__items,
+.payment__details {
+	flex: 0.8;
+}
+
+#review__items {
+	flex-direction: column;
 }
 
 .payment__address {
-	flex: 0.8;
+	margin-left: 100px;
+	line-height: 1.5em;
+}
+
+.payment__items {
+	justify-content: baseline;
+	border: 1px solid lightgray;
+	border-radius: 7px;
+	margin: 20px 0px 20px 20px;
+	padding: 20px;
+}
+
+.payment__priceContainer {
+	display: flex;
+	border: 1px solid lightgray;
+	border-radius: 7px;
+	padding: 14px 18px;
+	margin-left: 20px;
+}
+
+.inline__containerRight {
+	display: flex;
+	flex-direction: column;
+}
+
+.inline__containerRight > h3 {
+	color: #b12704;
+}
+
+.inline__containerRight > p {
+	font-size: 11.5px;
+	color: #565959;
+}
+
+.inline__containerLeft {
+	display: flex;
+}
+
+.inline__containerLeft > button {
+	align-self: center;
+	height: 32px;
+	width: 116px;
+	font-size: 12.5px;
+	padding: 1px 6px;
+	border-radius: 8px;
+	border: 1px solid rgb(252, 210, 0);
+	background-color: rgb(255, 216, 20);
+	margin: 10px 20px 10px 0px;
 }
 
 .order__summary {
@@ -72,11 +130,7 @@ body {
 
 .order__summary > p {
 	font-size: 11.5px;
-}
-
-.order__summary > .disclaimer > a {
-	text-decoration: none;
-	color: teal;
+	color: #565959;
 }
 
 .disclaimer {
